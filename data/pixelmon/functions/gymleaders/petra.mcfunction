@@ -36,6 +36,7 @@ execute as @p[tag=postPetra,scores={timerPostPetra=180}] run tellraw @p {"text":
 execute as @p[tag=postPetra,scores={timerPostPetra=240}] run tellraw @p {"text":"<Petra> Y... Por favor, lleva esto también contigo."}
 execute as @p[tag=postPetra,scores={timerPostPetra=280}] run playsound minecraft:tmget ambient @p ~ ~ ~ 1 1 1
 execute as @p[tag=postPetra,scores={timerPostPetra=280}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo la MT39 Tumba Rocas!","italic":true,"color":"gray"}]
+execute as @p[tag=postPetra,scores={timerPostPetra=280}] run give @p pixelmon:tm_gen6{tm:39s}
 execute as @p[tag=postPetra,scores={timerPostPetra=320}] run tellraw @p {"text":"<Petra> El movimiento Tumba Rocas no solo inflige daño al dejar caer rocas, también reduce la Velocidad del objetivo."}
 execute as @p[tag=postPetra,scores={timerPostPetra=360}] run tellraw @p {"text":"<Petra> Si usas una MT, enseña el movimiento instantáneamente a un Pokémon."}
 execute as @p[tag=postPetra,scores={timerPostPetra=400}] run tellraw @p {"text":"<Petra> Puedes usar una MT tantas veces como quieras, ¡así que pruébala!"}
