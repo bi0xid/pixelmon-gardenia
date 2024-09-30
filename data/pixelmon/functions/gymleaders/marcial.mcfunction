@@ -1,6 +1,6 @@
 ## Marcial PRE-batalla
 execute as @p[tag=!preMarcial] run scoreboard players reset @p timerPreMarcial
-execute as @p[x=19993,y=23,z=20104,distance=..8,tag=!preMarcial] run tag @p add preMarcial
+execute as @p[x=19989,y=-3,z=19438,distance=..12,tag=!preMarcial] run tag @p add preMarcial
 execute as @p[tag=preMarcial,scores={timerPreMarcial=1}]   run tellraw @p {"text":"<Marcial> ¡Soy Marcial! ¡El líder del Gimnasio de Pueblo Azuliza!"}
 execute as @p[tag=preMarcial,scores={timerPreMarcial=40}]  run tellraw @p {"text":"<Marcial> He sido agitado por las duras olas de esta zona..."}
 execute as @p[tag=preMarcial,scores={timerPreMarcial=80}]  run tellraw @p {"text":"<Marcial> Y me he vuelto resistente usando la cueva en las afueras de este pueblo como mi campo de entrenamiento, así como usando el equipo de este Gimnasio."}
@@ -12,7 +12,7 @@ scoreboard players add @p timerIntroPetra 1
 ## Marcial POST-batalla
 
 execute as @p[tag=!postMarcial] run scoreboard players reset @p timerpostMarcial
-execute if entity @p[x=19993,y=23,z=20104,distance=..12,tag=!postMarcial,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postMarcial
+execute if entity @p[x=19989,y=-3,z=19438,distance=..12,tag=!postMarcial,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postMarcial
 execute as @p[tag=postMarcial,scores={timerpostMarcial=1}]   run clear @p pixelmon:ultra_forest_key
 execute as @p[tag=postMarcial,scores={timerpostMarcial=1}]   run tellraw @p {"text":"<Marcial> OK, me has convencido. ¡Toma esta Medalla de Gimnasio!"}
 execute as @p[tag=postMarcial,scores={timerpostMarcial=1}]   run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Calor de Marcial.","italic":true,"color":"gray"}]
