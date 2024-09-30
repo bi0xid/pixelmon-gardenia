@@ -19,6 +19,7 @@ execute as @p[tag=postErico,scores={timerPostErico=1}] run clear @p pixelmon:ult
 
 execute as @p[tag=postErico,scores={timerPostErico=1}] run tellraw @p {"text":"<Erico> Me has electrificado. ¡Ahora, toma esta Medalla!"}
 
+execute as @p[tag=postErico,scores={timerPostErico=60}]  run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Dinamo de Erico.","italic":true,"color":"gray"}]
 execute as @p[tag=postErico,scores={timerPostErico=60}] run give @p pixelmon:dynamo_badge
 execute as @p[tag=postErico,scores={timerPostErico=60}] run stopsound @p record
 execute as @p[tag=postErico,scores={timerPostErico=60}] run playsound minecraft:badgeget ambient @p ~ ~ ~ 1 1 1
