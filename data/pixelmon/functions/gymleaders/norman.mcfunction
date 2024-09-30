@@ -19,11 +19,11 @@ execute as @p[tag=!postNorman] run scoreboard players reset @p timerPostNorman
 execute if entity @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!postNorman,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postNorman
 execute as @p[tag=postNorman,scores={timerPostNorman=1}] run clear @p pixelmon:ultra_forest_key
 
-execute as @p[tag=preNorman,scores={timerPreNorman=1}] run tellraw @p {"text":"<Norman> No puedo creerlo."}
-execute as @p[tag=preNorman,scores={timerPreNorman=40}] run tellraw @p ["",{"text":"<Norman> ¿Perdí contra "},{"selector":"@p"},{"text":"?"}]
-execute as @p[tag=preNorman,scores={timerPreNorman=80}] run tellraw @p {"text":"<Norman> ... ..."}
-execute as @p[tag=preNorman,scores={timerPreNorman=120}] run tellraw @p {"text":"<Norman> Has llegado hasta aquí..."}
-execute as @p[tag=preNorman,scores={timerPreNorman=180}] run tellraw @p {"text":"<Norman> ¡Así es! Te daré esto."}
+execute as @p[tag=postNorman,scores={timerPostNorman=1}] run tellraw @p {"text":"<Norman> No puedo creerlo."}
+execute as @p[tag=postNorman,scores={timerPostNorman=40}] run tellraw @p ["",{"text":"<Norman> ¿Perdí contra "},{"selector":"@p"},{"text":"?"}]
+execute as @p[tag=postNorman,scores={timerPostNorman=80}] run tellraw @p {"text":"<Norman> ... ..."}
+execute as @p[tag=postNorman,scores={timerPostNorman=120}] run tellraw @p {"text":"<Norman> Has llegado hasta aquí..."}
+execute as @p[tag=postNorman,scores={timerPostNorman=180}] run tellraw @p {"text":"<Norman> ¡Así es! Te daré esto."}
 
 execute as @p[tag=postNorman,scores={timerPostNorman=220}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Equilibrio de Norman.","italic":true,"color":"gray"}]
 execute as @p[tag=postNorman,scores={timerPostNorman=220}] run give @p pixelmon:balance_badge
