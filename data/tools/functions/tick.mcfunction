@@ -1,6 +1,6 @@
 ## Trainer messages reload
 
-# Petra
+# All gym leaders
 
 execute as @p run function pixelmon:gymleaders/petra
 execute as @p run function pixelmon:gymleaders/candela

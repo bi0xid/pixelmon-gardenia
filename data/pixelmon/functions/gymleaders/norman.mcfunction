@@ -31,21 +31,21 @@ execute as @p[tag=postNorman,scores={timerPostNorman=220}] run stopsound @p reco
 execute as @p[tag=postNorman,scores={timerPostNorman=220}] run playsound minecraft:badgeget ambient @p ~ ~ ~ 1 1 1
 execute as @p[tag=postNorman,scores={timerPostNorman=220}] run advancement grant @p only pixelmon:badges/05medallaequilibrio
 
-execute as @p[tag=preNorman,scores={timerPreNorman=260}] run tellraw @p {"text":"<Norman> Tener esa Medalla asegurará que los Pokémon que conozcan la MO Surf puedan viajar por el agua ahora."}
-execute as @p[tag=preNorman,scores={timerPreNorman=300}] run tellraw @p ["",{"text":"<Norman> Y este es mi regalo para ti, "},{"selector":"@p"},{"text":"."}]
-execute as @p[tag=preNorman,scores={timerPreNorman=340}] run tellraw @p {"text":"<Norman> Estoy seguro de que podrás usarlo bien."}
+execute as @p[tag=postNorman,scores={timerPostNorman=260}] run tellraw @p {"text":"<Norman> Tener esa Medalla asegurará que los Pokémon que conozcan la MO Surf puedan viajar por el agua ahora."}
+execute as @p[tag=postNorman,scores={timerPostNorman=300}] run tellraw @p ["",{"text":"<Norman> Y este es mi regalo para ti, "},{"selector":"@p"},{"text":"."}]
+execute as @p[tag=postNorman,scores={timerPostNorman=340}] run tellraw @p {"text":"<Norman> Estoy seguro de que podrás usarlo bien."}
 
 execute as @p[tag=postNorman,scores={timerPostNorman=380}] run playsound minecraft:tmget ambient @p ~ ~ ~ 1 1 1
 execute as @p[tag=postNorman,scores={timerPostNorman=380}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo la MT67 Represalia!","italic":true,"color":"gray"}]
-execute as @p[tag=postNorman,scores={timerPostNorman=380}] run give @p pixelmon:tm_gen6{tm:39s}
+execute as @p[tag=postNorman,scores={timerPostNorman=380}] run give @p pixelmon:tm_gen6{tm:s}
 
-execute as @p[tag=preNorman,scores={timerPreNorman=440}] run tellraw @p {"text":"<Norman> Represalia te permitirá vengarte de un compañero caído."}
-execute as @p[tag=preNorman,scores={timerPreNorman=480}] run tellraw @p {"text":"<Norman> Su poder se duplicará si un Pokémon lo usa en el siguiente movimiento justo después de que un aliado caiga."}
-execute as @p[tag=preNorman,scores={timerPreNorman=520}] run tellraw @p {"text":"<Norman> Espero que tú y tu equipo seáis lo suficientemente diligentes como para usarlo sabiamente."}
-execute as @p[tag=preNorman,scores={timerPreNorman=560}] run tellraw @p {"text":"<Norman> ..."}
-execute as @p[tag=preNorman,scores={timerPreNorman=600}] run tellraw @p {"text":"<Norman> Suspiro."}
-execute as @p[tag=preNorman,scores={timerPreNorman=640}] run tellraw @p {"text":"<Norman> Como Líder de Gimnasio, no puedo expresar lo frustrado que estoy."}
-execute as @p[tag=preNorman,scores={timerPreNorman=680}] run tellraw @p {"text":"<Norman> Pero, como padre, me hace sentir tanto feliz como un poco triste. Es extraño."}
+execute as @p[tag=postNorman,scores={timerPostNorman=440}] run tellraw @p {"text":"<Norman> Represalia te permitirá vengarte de un compañero caído."}
+execute as @p[tag=postNorman,scores={timerPostNorman=480}] run tellraw @p {"text":"<Norman> Su poder se duplicará si un Pokémon lo usa en el siguiente movimiento justo después de que un aliado caiga."}
+execute as @p[tag=postNorman,scores={timerPostNorman=520}] run tellraw @p {"text":"<Norman> Espero que tú y tu equipo seáis lo suficientemente diligentes como para usarlo sabiamente."}
+execute as @p[tag=postNorman,scores={timerPostNorman=560}] run tellraw @p {"text":"<Norman> ..."}
+execute as @p[tag=postNorman,scores={timerPostNorman=600}] run tellraw @p {"text":"<Norman> Suspiro."}
+execute as @p[tag=postNorman,scores={timerPostNorman=640}] run tellraw @p {"text":"<Norman> Como Líder de Gimnasio, no puedo expresar lo frustrado que estoy."}
+execute as @p[tag=postNorman,scores={timerPostNorman=680}] run tellraw @p {"text":"<Norman> Pero, como padre, me hace sentir tanto feliz como un poco triste. Es extraño."}
 
 execute as @p[tag=postNorman,scores={timerPostNorman=20000}] run tag @p remove postNorman
 scoreboard players add @p timerPostNorman 1
