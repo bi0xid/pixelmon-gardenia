@@ -1,0 +1,24 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Un buen entrenador"
+        },
+        "description": {
+            "text": "¡Has conseguido todas las medallas!"
+        },
+        "icon": {
+            "item": "pixelmon:master_ball"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "parent": "pixelmon:root",
+      "criteria": {
+          "example": {
+              "trigger": "minecraft:impossible"
+          }
+      }
+    }

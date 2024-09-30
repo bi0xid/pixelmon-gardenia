@@ -1,0 +1,24 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Medalla Calor"
+        },
+        "description": {
+            "text": "Vence a Candela"
+        },
+        "icon": {
+            "item": "pixelmon:heat_badge"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "parent": "pixelmon:root",
+      "criteria": {
+          "example": {
+              "trigger": "minecraft:impossible"
+          }
+      }
+    }

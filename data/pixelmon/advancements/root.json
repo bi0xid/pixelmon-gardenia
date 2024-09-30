@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:100}"
+    },
+    "title": "Entrando a Pixelmon",
+    "description": "Bienvenidos a Pixelmon Gardenia",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "pixelmon:textures/gui/advancements/backgrounds/ruinswall.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location"
+    }
+  }
+}
