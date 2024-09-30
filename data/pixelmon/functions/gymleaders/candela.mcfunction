@@ -1,44 +1,40 @@
-## Petra INTRO
-execute as @p[tag=!conversacionPetra] run scoreboard players reset @p timerIntroPetra
-execute as @p[x=19972,y=3,z=19990,distance=..12,tag=!conversacionPetra] run tag @p add conversacionPetra
-execute as @p[tag=conversacionPetra,scores={timerIntroPetra=1}] run tellraw @p {"text":"<...> Hola."}
-execute as @p[tag=conversacionPetra,scores={timerIntroPetra=40}] run tellraw @p {"text":"<...> Debes ser el nuevo aspirante."}
-execute as @p[tag=conversacionPetra,scores={timerIntroPetra=80}] run tellraw @p {"text":"<Petra> Soy Petra, la Líder de Gimnasio de Ciudad Férrica."}
-execute as @p[tag=conversacionPetra,scores={timerIntroPetra=120}] run tellraw @p {"text":"<Petra> Me hice Líder de Gimnasio para poder aplicar en batalla todo lo que aprendí en la Escuela Pokémon."}
-execute as @p[tag=conversacionPetra,scores={timerIntroPetra=160}] run tellraw @p {"text":"<Petra> Si me vences en un combate Pokémon te daré una medalla de gimnasio como prueba de tu fuerza como entrenador."}
-execute as @p[tag=conversacionPetra,scores={timerIntroPetra=200}] run tellraw @p {"text":"<Petra> Por favor, combate conmigo."}
-execute as @p[tag=conversacionPetra,scores={timerIntroPetra=240}] run tellraw @p {"text":"<Petra> Estoy deseando medirme contigo. Hasta que estés preparad@, buena suerte."}
-execute as @p[tag=conversacionPetra,scores={timerIntroPetra=50000}] run tag @p remove conversacionPetra
+## Candela PRE-batalla
+execute as @p[tag=!preCandela] run scoreboard players reset @p timerPreCandela
+execute as @p[x=19972,y=3,z=19990,distance=..12,tag=!preCandela] run tag @p add preCandela
+execute as @p[tag=preCandela,scores={timerPreCandela=1}]   run tellraw @p {"text":"<Candela> ¡Bienvenido!"}
+execute as @p[tag=preCandela,scores={timerPreCandela=40}]  run tellraw @p {"text":"<Candela> No, espera."}
+execute as @p[tag=preCandela,scores={timerPreCandela=80}]  run tellraw @p {"text":"<Candela> Quiero decir... ¡Entrenador debilucho, lo has hecho bien al llegar hasta aquí!"}
+execute as @p[tag=preCandela,scores={timerPreCandela=120}] run tellraw @p {"text":"<Candela> Veamos. Estoy, uh, honrada de servir como la Líder de Gimnasio de..."}
+execute as @p[tag=preCandela,scores={timerPreCandela=160}] run tellraw @p {"text":"<Candela> No, quiero decir..."}
+execute as @p[tag=preCandela,scores={timerPreCandela=200}] run tellraw @p {"text":"<Candela> ¡Soy Candela, y estoy a cargo aquí!"}
+execute as @p[tag=preCandela,scores={timerPreCandela=240}] run tellraw @p {"text":"<Candela> Uh... ¡Será mejor que no me subestimes solo porque llevo poco tiempo siendo Líder!"}
+execute as @p[tag=preCandela,scores={timerPreCandela=280}] run tellraw @p {"text":"<Candela> Con las habilidades heredadas de mi abuelo, voy a, uh, demostrar los movimientos ardientes que hemos perfeccionado en esta tierra!"}
+execute as @p[tag=preCandela,scores={timerPreCandela=320}] run tellraw @p {"text":"<Candela> ¡Haiyaaaaaaaaaaaaa!"}
+execute as @p[tag=preCandela,scores={timerPreCandela=50000}] run tag @p remove preCandela
 scoreboard players add @p timerIntroPetra 1
 
-## Petra PRE
-execute as @p[tag=!prePetra] run scoreboard players reset @p timerPrePetra
-execute as @p[x=19972,y=3,z=19990,distance=..12,tag=!prePetra] run tag @p add prePetra
-execute as @p[tag=prePetra,scores={timerPrePetra=1}] run tellraw @p {"text":"<Petra> Justo como lo esperaba..."}
-execute as @p[tag=prePetra,scores={timerPrePetra=40}] run tellraw @p {"text":"<Petra> Sabía que tú y tus Pokémon llegaríais lejos."}
-execute as @p[tag=prePetra,scores={timerPrePetra=80}] run tellraw @p {"text":"<Petra> ¿Vas a mostrarme cómo luchas con tus Pokémon?"}
-execute as @p[tag=prePetra,scores={timerPrePetra=50000}] run tag @p remove prePetra
-scoreboard players add @p timerPrePetra 1
+## Candela POST-batalla
 
-## Petra POST
-execute as @p[tag=!postPetra] run scoreboard players reset @p timerPostPetra
-execute if entity @p[x=19966,y=7,z=19990,distance=..12,tag=!postPetra,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postPetra
-execute as @p[tag=postPetra,scores={timerPostPetra=1}] run clear @p pixelmon:ultra_forest_key
-execute as @p[tag=postPetra,scores={timerPostPetra=1}] run tellraw @p {"text":"<Petra> Lo entiendo."}
-execute as @p[tag=postPetra,scores={timerPostPetra=40}] run tellraw @p {"text":"<Petra> Las reglas de la Liga Pokémon indican que los Entrenadores reciben esto si derrotan a un Líder de Gimnasio."}
-execute as @p[tag=postPetra,scores={timerPostPetra=80}] run tellraw @p  {"text":"<Petra> Por favor, acepta la Medalla Piedra oficial de la Liga Pokémon."}
-execute as @p[tag=postPetra,scores={timerPostPetra=120}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Piedra de Petra.","italic":true,"color":"gray"}]
-execute as @p[tag=postPetra,scores={timerPostPetra=120}] run give @p pixelmon:stone_badge
-execute as @p[tag=postPetra,scores={timerPostPetra=120}] run stopsound @p record
-execute as @p[tag=postPetra,scores={timerPostPetra=120}] run playsound minecraft:badgeget ambient @p ~ ~ ~ 1 1 1
-execute as @p[tag=postPetra,scores={timerPostPetra=120}] run advancement grant @p only pixelmon:badges/01medallapiedra
-execute as @p[tag=postPetra,scores={timerPostPetra=180}] run tellraw @p {"text":"<Petra> La Medalla Piedra permite a los Pokémon usar el movimiento MO Corte fuera de combate."}
-execute as @p[tag=postPetra,scores={timerPostPetra=240}] run tellraw @p {"text":"<Petra> Y... Por favor, lleva esto también contigo."}
-execute as @p[tag=postPetra,scores={timerPostPetra=280}] run playsound minecraft:tmget ambient @p ~ ~ ~ 1 1 1
-execute as @p[tag=postPetra,scores={timerPostPetra=280}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo la MT39 Tumba Rocas!","italic":true,"color":"gray"}]
-execute as @p[tag=postPetra,scores={timerPostPetra=320}] run tellraw @p {"text":"<Petra> El movimiento Tumba Rocas no solo inflige daño al dejar caer rocas, también reduce la Velocidad del objetivo."}
-execute as @p[tag=postPetra,scores={timerPostPetra=360}] run tellraw @p {"text":"<Petra> Si usas una MT, enseña el movimiento instantáneamente a un Pokémon."}
-execute as @p[tag=postPetra,scores={timerPostPetra=400}] run tellraw @p {"text":"<Petra> Puedes usar una MT tantas veces como quieras, ¡así que pruébala!"}
-execute as @p[tag=postPetra,scores={timerPostPetra=50000}] run tag @p remove postPetra
-scoreboard players add @p timerPostPetra 1
+execute as @p[tag=!postCandela] run scoreboard players reset @p timerpostCandela
+execute if entity @p[x=19966,y=7,z=19990,distance=..12,tag=!postCandela,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postCandela
+execute as @p[tag=postCandela,scores={timerpostCandela=1}]   run clear @p pixelmon:ultra_forest_key
+execute as @p[tag=postCandela,scores={timerpostCandela=1}]   run tellraw @p {"text":"<Candela> Yo... solo he comenzado recientemente como Líder de Gimnasio."}
+execute as @p[tag=postCandela,scores={timerpostCandela=40}]  run tellraw @p {"text":"<Candela> Supongo que estaba intentando demasiado ser alguien que no soy."}
+execute as @p[tag=postCandela,scores={timerpostCandela=80}]  run tellraw @p {"text":"<Candela> Cuando no actúo como yo misma, no es de extrañar que los Pokémon que luchan a mi lado se confundan."}
+execute as @p[tag=postCandela,scores={timerpostCandela=120}]  run tellraw @p {"text":"<Candela> Gracias por enseñarme eso. Te lo mereces."}
+execute as @p[tag=postCandela,scores={timerpostCandela=180}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Calor de Candela.","italic":true,"color":"gray"}]
+execute as @p[tag=postCandela,scores={timerpostCandela=180}] run give @p pixelmon:heat_badge
+execute as @p[tag=postCandela,scores={timerpostCandela=180}] run stopsound @p record
+execute as @p[tag=postCandela,scores={timerpostCandela=180}] run playsound minecraft:badgeget ambient @p ~ ~ ~ 1 1 1
+execute as @p[tag=postCandela,scores={timerpostCandela=180}] run advancement grant @p only pixelmon:badges/04medallacalor
+execute as @p[tag=postCandela,scores={timerpostCandela=240}] run tellraw @p {"text":"<Candela> Si tienes la Insignia Calor, permite que los Pokémon usen el movimiento HM Fuerza fuera de batalla."}
+execute as @p[tag=postCandela,scores={timerpostCandela=280}] run tellraw @p {"text":"<Candela> Esto es un símbolo de mi agradecimiento. ¡No seas tímido al tomarlo!"}
+execute as @p[tag=postCandela,scores={timerpostCandela=280}] run give @p pixelmon:tm_gen6{tm:50s}
+execute as @p[tag=postCandela,scores={timerpostCandela=280}] run playsound minecraft:tmget ambient @p ~ ~ ~ 1 1 1
+execute as @p[tag=postCandela,scores={timerpostCandela=280}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo la MT50 Calor Abrasador!","italic":true,"color":"gray"}]
+execute as @p[tag=postCandela,scores={timerpostCandela=320}] run tellraw @p {"text":"<Candela> Calor Abrasador es un movimiento de tipo Fuego que inflige un daño serio al objetivo."}
+execute as @p[tag=postCandela,scores={timerpostCandela=360}] run tellraw @p {"text":"<Candela> Pero también reduce drásticamente el Ataque Especial del Pokémon que lo usa."}
+execute as @p[tag=postCandela,scores={timerpostCandela=400}] run tellraw @p {"text":"<Candela> Puede que no sea adecuado para batallas largas."}
+execute as @p[tag=postCandela,scores={timerpostCandela=50000}] run tag @p remove postCandela
+scoreboard players add @p timerpostCandela 1
 
