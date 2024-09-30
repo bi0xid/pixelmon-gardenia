@@ -7,7 +7,8 @@ scoreboard objectives add timerPrePetra dummy
 scoreboard objectives add timerPostPetra dummy
 scoreboard objectives add timerPreMarcial dummy
 scoreboard objectives add timerPostMarcial dummy
-scoreboard objectives add timerErico dummy
+scoreboard objectives add timerPreErico dummy
+scoreboard objectives add timerPostErico dummy
 scoreboard objectives add timerPreCandela dummy
 scoreboard objectives add timerPostCandela dummy
 scoreboard objectives add timerPreNorman dummy
@@ -31,5 +32,7 @@ scoreboard players add @p timerPreNorman 1
 scoreboard players add @p timerPostNorman 1
 scoreboard players add @p timerPreVitoLeti 1
 scoreboard players add @p timerPostVitoLeti 1
+scoreboard players add @p timerPreErico 1
+scoreboard players add @p timerPostErico 1
 
 tellraw @p {"text":"<Pixelmon Master> Todo cargado. Disfruta de la experiencia."}
