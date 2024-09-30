@@ -10,7 +10,7 @@ execute as @p[tag=preCandela,scores={timerPreCandela=200}] run tellraw @p {"text
 execute as @p[tag=preCandela,scores={timerPreCandela=240}] run tellraw @p {"text":"<Candela> Uh... ¡Será mejor que no me subestimes solo porque llevo poco tiempo siendo Líder!"}
 execute as @p[tag=preCandela,scores={timerPreCandela=280}] run tellraw @p {"text":"<Candela> Con las habilidades heredadas de mi abuelo, voy a, uh, demostrar los movimientos ardientes que hemos perfeccionado en esta tierra!"}
 execute as @p[tag=preCandela,scores={timerPreCandela=320}] run tellraw @p {"text":"<Candela> ¡Haiyaaaaaaaaaaaaa!"}
-execute as @p[tag=preCandela,scores={timerPreCandela=50000}] run tag @p remove preCandela
+execute as @p[tag=preCandela,scores={timerPreCandela=20000}] run tag @p remove preCandela
 scoreboard players add @p timerIntroPetra 1
 
 ## Candela POST-batalla
@@ -35,6 +35,6 @@ execute as @p[tag=postCandela,scores={timerpostCandela=280}] run tellraw @p ["",
 execute as @p[tag=postCandela,scores={timerpostCandela=320}] run tellraw @p {"text":"<Candela> Calor Abrasador es un movimiento de tipo Fuego que inflige un daño serio al objetivo."}
 execute as @p[tag=postCandela,scores={timerpostCandela=360}] run tellraw @p {"text":"<Candela> Pero también reduce drásticamente el Ataque Especial del Pokémon que lo usa."}
 execute as @p[tag=postCandela,scores={timerpostCandela=400}] run tellraw @p {"text":"<Candela> Puede que no sea adecuado para batallas largas."}
-execute as @p[tag=postCandela,scores={timerpostCandela=50000}] run tag @p remove postCandela
+execute as @p[tag=postCandela,scores={timerpostCandela=20000}] run tag @p remove postCandela
 scoreboard players add @p timerpostCandela 1
 
