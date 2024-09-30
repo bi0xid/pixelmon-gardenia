@@ -9,3 +9,4 @@ execute as @p run function pixelmon:gymleaders/alana
 execute as @p run function pixelmon:gymleaders/norman
 execute as @p run function pixelmon:gymleaders/vitoyleti
 execute as @p run function pixelmon:gymleaders/erico
+execute as @p run function pixelmon:gymleaders/plubio
