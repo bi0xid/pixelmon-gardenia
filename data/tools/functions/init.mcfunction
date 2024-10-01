@@ -42,5 +42,9 @@ scoreboard players add @p timerPostPlubio 1
 
 # Gashapones
 scoreboard objectives add random_reward dummy
+scoreboard objectives add itemUsed minecraft.used:pixelmon.ultra_ruin_key
+
+// TODO add random rewards
+scoreboard players add @p itemUsed 0
 
 tellraw @p {"text":"<Pixelmon Master> Todo cargado. Disfruta de la experiencia."}
