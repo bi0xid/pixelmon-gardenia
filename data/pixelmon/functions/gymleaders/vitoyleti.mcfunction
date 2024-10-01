@@ -1,6 +1,6 @@
 ## VitoLeti PRE
 execute as @p[tag=!preVitoLeti] run scoreboard players reset @p timerPreVitoLeti
-execute as @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!preVitoLeti] run tag @p add preVitoLeti
+execute as @p[x=19966,y=-1,z=19585,distance=..12,tag=!preVitoLeti] run tag @p add preVitoLeti
 
 execute as @p[tag=preVitoLeti,scores={timerPreVitoLeti=1}] run tellraw @p {"text":"<Leti> Je je je... ¿Te sorprendió?"}
 execute as @p[tag=preVitoLeti,scores={timerPreVitoLeti=1}] run tellraw @p {"text":"<Vito> Ji ji ji... ¿Te sorprendió?"}
@@ -23,7 +23,7 @@ scoreboard players add @p timerPreVitoLeti 1
 
 ## VitoLeti POST
 execute as @p[tag=!postVitoLeti] run scoreboard players reset @p timerPostVitoLeti
-execute if entity @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!postVitoLeti,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postVitoLeti
+execute if entity @p[x=19966,y=-1,z=19585,distance=..12,tag=!postVitoLeti,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postVitoLeti
 execute as @p[tag=postVitoLeti,scores={timerPostVitoLeti=1}] run clear @p pixelmon:ultra_forest_key
 
 execute as @p[tag=postVitoLeti,scores={timerPostVitoLeti=1}] run tellraw @p {"text":"<Leti> No se puede evitar. Has ganado..."}

@@ -1,6 +1,6 @@
 ## Norman PRE
 execute as @p[tag=!preNorman] run scoreboard players reset @p timerPreNorman
-execute as @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!preNorman] run tag @p add preNorman
+execute as @p[x=19938,y=-3,z=20243,distance=..12,tag=!preNorman] run tag @p add preNorman
 
 execute as @p[tag=preNorman,scores={timerPreNorman=1}] run tellraw @p {"text":"<Norman> Hm... Así que conseguiste cuatro Medallas de Gimnasio."}
 execute as @p[tag=preNorman,scores={timerPreNorman=40}] run tellraw @p {"text":"<Norman> Entonces, como te prometí, tendremos una batalla Pokémon."}
@@ -16,7 +16,7 @@ scoreboard players add @p timerPreNorman 1
 
 ## Norman POST
 execute as @p[tag=!postNorman] run scoreboard players reset @p timerPostNorman
-execute if entity @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!postNorman,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postNorman
+execute if entity @p[x=19938,y=-3,z=20243,distance=..12,tag=!postNorman,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postNorman
 execute as @p[tag=postNorman,scores={timerPostNorman=1}] run clear @p pixelmon:ultra_forest_key
 
 execute as @p[tag=postNorman,scores={timerPostNorman=1}] run tellraw @p {"text":"<Norman> No puedo creerlo."}

@@ -31,7 +31,7 @@ execute as @p[tag=postPetra,scores={timerPostPetra=1}] run clear @p pixelmon:ult
 
 execute as @p[tag=postPetra,scores={timerPostPetra=1}] run tellraw @p {"text":"<Petra> Lo entiendo."}
 execute as @p[tag=postPetra,scores={timerPostPetra=40}] run tellraw @p {"text":"<Petra> Las reglas de la Liga Pokémon indican que los Entrenadores reciben esto si derrotan a un Líder de Gimnasio."}
-execute as @p[tag=postPetra,scores={timerPostPetra=80}] run tellraw @p  {"text":"<Petra> Por favor, acepta la Medalla Piedra oficial de la Liga Pokémon."}
+execute as @p[tag=postPetra,scores={timerPostPetra=80}] run tellraw @p {"text":"<Petra> Por favor, acepta la Medalla Piedra oficial de la Liga Pokémon."}
 execute as @p[tag=postPetra,scores={timerPostPetra=120}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Piedra de Petra.","italic":true,"color":"gray"}]
 
 execute as @p[tag=postPetra,scores={timerPostPetra=120}] run give @p pixelmon:stone_badge

@@ -1,18 +1,18 @@
 ## Alana PRE
 execute as @p[tag=!preAlana] run scoreboard players reset @p timerPreAlana
-execute as @p[x=xxxx,y=xxxx,z=xxxx,distance=..12,tag=!preAlana] run tag @p add preAlana
+execute as @p[x=19957,y=83,z=19800,distance=..12,tag=!preAlana] run tag @p add preAlana
 
-execute as @p[tag=preAlana,scores={timerPreAlana=1}]   run tellraw @p {"text":"<Alana> Soy Alana. Soy la Líder del Gimnasio Pokémon de Fortree."}
-execute as @p[tag=preAlana,scores={timerPreAlana=9}]   run tellraw @p {"text":"<Alana> Me he convertido en uno con los Pokémon voladores y he surcado los cielos..."}
-execute as @p[tag=preAlana,scores={timerPreAlana=17}]  run tellraw @p {"text":"<Alana> No importa cuán agotadora sea la batalla, triunfaremos con gracia..."}
-execute as @p[tag=preAlana,scores={timerPreAlana=25}]  run tellraw @p {"text":"<Alana> ¡Sé testigo de la elegante coreografía de mis Pokémon voladores y yo!"}
+execute as @p[tag=preAlana,scores={timerPreAlana=1}] run tellraw @p {"text":"<Alana> Soy Alana. Soy la Líder del Gimnasio Pokémon de Fortree."}
+execute as @p[tag=preAlana,scores={timerPreAlana=9}] run tellraw @p {"text":"<Alana> Me he convertido en uno con los Pokémon voladores y he surcado los cielos..."}
+execute as @p[tag=preAlana,scores={timerPreAlana=17}] run tellraw @p {"text":"<Alana> No importa cuán agotadora sea la batalla, triunfaremos con gracia..."}
+execute as @p[tag=preAlana,scores={timerPreAlana=25}] run tellraw @p {"text":"<Alana> ¡Sé testigo de la elegante coreografía de mis Pokémon voladores y yo!"}
 
 execute as @p[tag=preAlana,scores={timerPreAlana=20000}] run tag @p remove preAlana
 scoreboard players add @p timerPreAlana 1
 
 ## Alana POST
 execute as @p[tag=!postAlana] run scoreboard players reset @p timerPostAlana
-execute if entity @p[x=xxxx,y=xxxx,z=xxxxx,distance=..12,tag=!postAlana,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postAlana
+execute if entity @p[x=19957,y=83,z=19800,distance=..12,tag=!postAlana,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postAlana
 execute as @p[tag=postAlana,scores={timerPostAlana=1}] run clear @p pixelmon:ultra_forest_key
 
 execute as @p[tag=postAlana,scores={timerpostAlana=1}] run tellraw @p {"text":"<Alana> Reconozco tu talento y te presento esta Medalla de Gimnasio."}

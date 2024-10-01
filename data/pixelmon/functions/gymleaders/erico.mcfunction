@@ -1,6 +1,6 @@
 ## Erico PRE
 execute as @p[tag=!preErico] run scoreboard players reset @p timerPreErico
-execute as @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!preErico] run tag @p add preErico
+execute as @p[x=19979,y=38,z=20371,distance=..12,tag=!preErico] run tag @p add preErico
 
 execute as @p[tag=preErico,scores={timerPreErico=1}] run tellraw @p {"text":"<Erico> ¿Oh? ¿Qué estás haciendo aquí?"} 
 execute as @p[tag=preErico,scores={timerPreErico=60}] run tellraw @p {"text":"<Erico> ¿Qué? ¿Dices que has pasado todas mis puertas trucadas?"}
@@ -14,7 +14,7 @@ scoreboard players add @p timerPreErico 1
 
 ## Erico POST
 execute as @p[tag=!postErico] run scoreboard players reset @p timerPostErico
-execute if entity @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!postErico,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postErico
+execute if entity @p[x=19979,y=38,z=20371,distance=..12,tag=!postErico,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postErico
 execute as @p[tag=postErico,scores={timerPostErico=1}] run clear @p pixelmon:ultra_forest_key
 
 execute as @p[tag=postErico,scores={timerPostErico=1}] run tellraw @p {"text":"<Erico> Me has electrificado. ¡Ahora, toma esta Medalla!"}

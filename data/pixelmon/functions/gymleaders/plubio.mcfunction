@@ -1,6 +1,6 @@
 ## Plubio PRE
 execute as @p[tag=!prePlubio] run scoreboard players reset @p timerPrePlubio
-execute as @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!prePlubio] run tag @p add prePlubio
+execute as @p[x=19952,y=49,z=20554,distance=..12,tag=!prePlubio] run tag @p add prePlubio
 
 execute as @p[tag=prePlubio,scores={timerPrePlubio=1}] run tellraw @p {"text":"<Plubio> Permíteme presentarme formalmente."}
 execute as @p[tag=prePlubio,scores={timerPrePlubio=60}] run tellraw @p {"text":"<Plubio> Soy Plubio, el Líder de Gimnasio de Ciudad Arrecípolis."}
@@ -18,7 +18,7 @@ scoreboard players add @p timerPrePlubio 1
 
 ## Plubio POST
 execute as @p[tag=!postPlubio] run scoreboard players reset @p timerPostPlubio
-execute if entity @p[x=xxxxx,y=xxxxx,z=xxxxx,distance=..12,tag=!postPlubio,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postPlubio
+execute if entity @p[x=19952,y=49,z=20554,distance=..12,tag=!postPlubio,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postPlubio
 execute as @p[tag=postPlubio,scores={timerPostPlubio=1}] run clear @p pixelmon:ultra_forest_key
 
 execute as @p[tag=postPlubio,scores={timerPostPlubio=1}] run tellraw @p {"text":"<Plubio> Ahora reconozco tu autenticidad y magnificencia como Entrenador Pokémon."}
