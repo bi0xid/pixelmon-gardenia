@@ -20,7 +20,7 @@ execute as @p[tag=postMarcial,scores={timerpostMarcial=1}] run clear @p pixelmon
 execute as @p[tag=postMarcial,scores={timerpostMarcial=1}] run tellraw @p {"text":"<Marcial> OK, me has convencido. ¡Toma esta Medalla de Gimnasio!"}
 
 execute as @p[tag=postMarcial,scores={timerpostMarcial=1}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Calor de Marcial.","italic":true,"color":"gray"}]
-execute as @p[tag=postMarcial,scores={timerpostMarcial=1}] run give @p pixelmon:knucle_badge
+execute as @p[tag=postMarcial,scores={timerpostMarcial=1}] run give @p pixelmon:knuckle_badge
 execute as @p[tag=postMarcial,scores={timerpostMarcial=1}] run stopsound @p record
 execute as @p[tag=postMarcial,scores={timerpostMarcial=1}] run playsound minecraft:badgeget ambient @p ~ ~ ~ 1 1 1
 execute as @p[tag=postMarcial,scores={timerpostMarcial=1}] run advancement grant @p only pixelmon:badges/02medallapuno
