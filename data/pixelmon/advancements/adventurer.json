@@ -2,10 +2,10 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Adventurer"
+            "text": "Aventurero"
         },
         "description": {
-            "text": "Explore the region"
+            "text": "Explora la región"
         },
         "icon": {
             "item": "pixelmon:wide_lens"
