@@ -1,6 +1,8 @@
 ## LOAD INFORMATION
 
 tellraw @p {"text":"<Pixelmon Master> Estamos cargándolo todo, un momento..."}
+
+# Gym leaders dialogues 
 scoreboard objectives add entradaPetra dummy
 scoreboard objectives add timerIntroPetra dummy
 scoreboard objectives add timerPrePetra dummy
@@ -37,5 +39,8 @@ scoreboard players add @p timerPreErico 1
 scoreboard players add @p timerPostErico 1
 scoreboard players add @p timerPrePlubio 1
 scoreboard players add @p timerPostPlubio 1
+
+# Gashapones
+scoreboard objectives add random_reward dummy
 
 tellraw @p {"text":"<Pixelmon Master> Todo cargado. Disfruta de la experiencia."}

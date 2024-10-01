@@ -14,6 +14,9 @@ execute as @p run function pixelmon:gymleaders/plubio
 
 ## Gashapones
 
-# Common gashapons
+# Daily rewards
 
 execute as @p run function pixelmon:gashapons/common
+
+# Common Gashapon
+
