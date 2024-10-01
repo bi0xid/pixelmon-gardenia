@@ -15,7 +15,7 @@
         "announce_to_chat": true,
         "hidden": true
       },
-      "parent": "hoenn:adventurer/kyogre1",
+      "parent": "pixelmon:adventurer/kyogre1",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"

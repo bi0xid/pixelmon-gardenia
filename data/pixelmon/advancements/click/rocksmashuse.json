@@ -10,6 +10,6 @@
         }
     },
     "rewards": {
-        "function": "hoenn:click/rocksmashuse"
+        "function": "pixelmon:click/rocksmashuse"
     }
 }

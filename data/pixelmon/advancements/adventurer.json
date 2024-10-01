@@ -15,7 +15,7 @@
         "announce_to_chat": false,
         "hidden": false
       },
-      "parent": "hoenn:root",
+      "parent": "pixelmon:root",
       "criteria": {
           "example": {
               "trigger": "minecraft:impossible"
