@@ -12,9 +12,5 @@ execute as @p[tag=gashaDiario] run tag @p remove gashaDiario
 
 ## Common gashapon trigger
 
-# Trigger the reward when gasha is used
-
-execute as @a[x=-182,y=76,z=161,distance=..1,nbt={SelectedItem:{id:"pixelmon:ultra_ruin_key"}}] at @p run function pixelmon:gashapons/common_reward
-execute as @a[x=-182,y=76,z=161,distance=2..,nbt={SelectedItem:{id:"pixelmon:ultra_ruin_key"}}] at @p run tellraw @p {"text":"<Pixelmon Server> Solo puedes utilizar la llave de Gacha en una máquina de Gachas"}
-
-
+# Check if a player used a gashapon
+execute as @p[scores={itemUsed=1..}] run function pixelmon:gashapons/trigger_common
