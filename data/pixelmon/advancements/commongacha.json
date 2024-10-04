@@ -16,24 +16,21 @@
     },
     "parent": "pixelmon:root",
     "criteria": {
-      "use_item_on_block": {
-        "trigger": "minecraft:item_used_on_block",
-        "conditions": {
-            "location": {
-                "smokey": true
-              },
-            "block": {
-              "blocks": [
-                "pixelmon:temple_block"
-              ]
+        "example": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": [
+                {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                    "items": [
+                        "pixelmon:ultra_ruin_key"
+                    ]
+                    }
+                }
+                ]
             }
-          },
-          "item": {
-            "items": [
-              "pixelmon:ultra_ruin_key"
-            ]
-          }
         }
-      }
+    }
 }
 
