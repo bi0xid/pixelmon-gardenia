@@ -1,7 +1,7 @@
 ## Random common rewards
 
 # Give a random reward by selecting a random number
-// TODO Randomize correctly -> add a loop for scoreboard // scoreboard players set @p random_reward 0..100
+## TODO Randomize correctly -> add a loop for scoreboard // scoreboard players set @p random_reward 0..100
 
 tellraw @p {"text":"has usado una llave de gacha"}
 

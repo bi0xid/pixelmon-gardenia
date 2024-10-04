@@ -45,7 +45,7 @@ scoreboard objectives add random_reward dummy
 # scoreboard objectives add itemUsed minecraft.used:pixelmon.ultra_ruin_key
 scoreboard objectives add rightClick minecraft.custom:minecraft.interact_with_entity
 
-// TODO add random rewards
+## TODO add random rewards
 scoreboard players add @p itemUsed 0
 
 tellraw @p {"text":"<Pixelmon Master> Todo cargado. Disfruta de la experiencia."}
