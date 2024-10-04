@@ -19,10 +19,26 @@
       "use_item_on_block": {
         "trigger": "minecraft:item_used_on_block",
         "conditions": {
-          "block": {
-            "blocks": [
-              "pixelmon:temple_block"
-            ]
+          "location": {
+            "position": {
+              "x": {
+                "min": -30000000,
+                "max": 30000000
+              },
+              "y": {
+                "min": 0,
+                "max": 255
+              },
+              "z": {
+                "min": -30000000,
+                "max": 30000000
+              }
+            },
+            "block": {
+              "blocks": [
+                "pixelmon:temple_block"
+              ]
+            }
           },
           "item": {
             "items": [
