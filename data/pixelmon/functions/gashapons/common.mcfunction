@@ -12,5 +12,8 @@ execute as @p[tag=gashaDiario] run tag @p remove gashaDiario
 
 ## Common gashapon trigger
 
+
 # Check if a player used a gashapon
-execute as @p[scores={itemUsed=1..}] run function pixelmon:gashapons/trigger_common
+
+execute as @p[scores={rightClick=1..},nbt={SelectedItem:{id:"pixelmon:ultra_ruin_key"}}] run function pixelmon:gashapons/trigger_common
+scoreboard players reset @p rightClick
