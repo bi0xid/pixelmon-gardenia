@@ -15,7 +15,7 @@ execute as @p[tag=gashaDiario] run tag @p remove gashaDiario
 
 # Check if a player used a gashapon
 
-execute as @a[advancements=pixelmon:commongacha] run pixelmon:gashapons/trigger_common
+execute as @p if entity @p[advancements={pixelmon:commongacha=true}] run pixelmon:gashapons/trigger_common
 advancement revoke @a only pixelmon:commongacha
 
 

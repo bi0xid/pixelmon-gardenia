@@ -14,6 +14,9 @@
           "text": "Has usado una llave de gacha común",
           "color": "green"
         },
+        "description": {
+            "text": "¡Has usado una llave de gacha común!"
+        },
         "icon": {
           "item": "pixelmon:ultra_ruin_key"
         },
