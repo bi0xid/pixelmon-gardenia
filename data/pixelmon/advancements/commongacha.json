@@ -1,29 +1,28 @@
 {
-    "criteria": {
-      "use_item": {
-        "trigger": "minecraft:item_used_on_block",
-        "conditions": {
-          "item": {
-            "items": ["pixelmon:ultra_ruin_key"]
-          }
-        }
-      }
+"display": {
+    "title": {
+        "text": "Has usado una llave de gacha común"
     },
-    "display": {
-        "title": {
-          "text": "Has usado una llave de gacha común",
-          "color": "green"
-        },
-        "description": {
-            "text": "¡Has usado una llave de gacha común!"
-        },
-        "icon": {
-          "item": "pixelmon:ultra_ruin_key"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": false,
-        "hidden": false
-      }   
-  }
-  
+    "description": {
+        "text": "¡Has usado una llave de gacha común!"
+    },
+    "icon": {
+        "item": "pixelmon:ultra_ruin_key"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+    },
+    "parent": "pixelmon:root",
+    "criteria": {
+        "use_item": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+              "item": {
+                "items": ["pixelmon:ultra_ruin_key"]
+              }
+            }
+        }
+    }
+}
