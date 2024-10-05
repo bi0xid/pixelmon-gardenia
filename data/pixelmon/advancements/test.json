@@ -8,7 +8,7 @@
             {
                 "item":
                 {
-                    "items": "minecraft:book"
+                    "items": ["minecraft:book"]
                 }
             }
         }
