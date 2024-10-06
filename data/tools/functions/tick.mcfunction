@@ -18,5 +18,13 @@ execute as @p run function pixelmon:gymleaders/plubio
 
 execute as @p run function pixelmon:gashapons/common
 
-# Common Gashapon
+## Common Gashapon
 
+# Create the random 0..100
+scoreboard players add @p random_reward 1
+execute as @p[scores={random_reward=100}] run scoreboard players reset @p random_reward
+
+# execute as @p run function gashapon_machine:gashapon_machine
+#execute if block ~ ~ ~ gashapixel:gasha_machine run function gashapon_machine:gashapon_machine
+
+#execute as @p[nbt={SelectedItem:{id:"minecraft:gold_nugget"}}] if block ~ ~ ~ gashapixel:gasha_machine run give @p minecraft:apple
