@@ -44,6 +44,6 @@ scoreboard players add @p timerPostPlubio 1
 scoreboard objectives add random_reward dummy
 
 ## TODO add random rewards
-scoreboard players add @p itemUsed 0
+scoreboard players add @p random_reward 1
 
 tellraw @p {"text":"<Pixelmon Master> Todo cargado. Disfruta de la experiencia."}
