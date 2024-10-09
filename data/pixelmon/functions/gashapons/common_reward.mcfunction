@@ -3,7 +3,7 @@
 # Give a random reward by selecting a random number
 
 # Tell user that they used a gashapon
-tellraw @p {"text":"has usado una llave de gacha"}
+tellraw @p ["",{"text":"¡Has usado un Gashapon!","color":"green"}]
 
 # remove 1 gashapon
 clear @p gashapixel:gashapon 1
