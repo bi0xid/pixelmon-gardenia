@@ -25,6 +25,6 @@ execute as @p[scores={random_reward=100}] run scoreboard players reset @p random
 execute as @p if entity @p[advancements={pixelmon:root=true}] run scoreboard players set @p userDay 0 
 
 # execute gashapon check
-execute as @p run function pixelmon:gashapons/common
+# execute as @p run function pixelmon:gashapons/common
 
 
