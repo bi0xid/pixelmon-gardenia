@@ -16,9 +16,9 @@ execute if score @p random_reward matches 0..10 run give @p pixelmon:master_ball
 execute if score @p random_reward matches 11..20 run give @p pixelmon:ultra_ball 30
 execute if score @p random_reward matches 21..30 run pokegive @p Greninja form:battle_bond
 execute if score @p random_reward matches 31..40 run give @p pixelmon:black_poke_bag
-execute if score @p random_reward matches 41..44 run give @p ruby_azelf 1
-execute if score @p random_reward matches 45..47 run give @p ruby_mesprit 1
-execute if score @p random_reward matches 48..50 run give @p ruby_uxie 1
+execute if score @p random_reward matches 41..44 run give @p pixelmon:ruby_azelf 1
+execute if score @p random_reward matches 45..47 run give @p pixelmon:ruby_mesprit 1
+execute if score @p random_reward matches 48..50 run give @p pixelmon:ruby_uxie 1
 execute if score @p random_reward matches 51..60 run give @p pixelmon:ability_capsule 3
 execute if score @p random_reward matches 61..70 run give @p pixelmon:ability_patch 2
 execute if score @p random_reward matches 71..80 run pokegive @p Kecleon palette:alter
