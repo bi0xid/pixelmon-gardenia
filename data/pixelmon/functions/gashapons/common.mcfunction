@@ -4,7 +4,7 @@
 execute if score @p userDay < @p serverDay run tag @p add gashaDiario
 execute if score @p userDay > @p serverDay run tag @p add gashaDiario
 
-# Do it only once - make userDay receive serverDay
+# Do it only once - makes userDay receive serverDay
 scoreboard players operation @p userDay = @p serverDay
 
 # If you should get a gasha, get it!

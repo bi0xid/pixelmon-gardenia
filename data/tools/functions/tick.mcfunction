@@ -22,9 +22,11 @@ execute as @p[scores={random_reward=100}] run scoreboard players reset @p random
 
 # Daily rewards
 
-execute as @p if entity @p[advancements={pixelmon:root=true}] run scoreboard players set @p userDay 0 
+# For the first access to the server
+execute as @p[tag=!knownUser] run scoreboard players set @p userDay 0
+execute as @p[tag=!knownUser] run tag @p add knownUser
 
 # execute gashapon check
-# execute as @p run function pixelmon:gashapons/common
+execute as @p run function pixelmon:gashapons/common
 
 
