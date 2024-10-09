@@ -1,6 +1,6 @@
 ## LOAD INFORMATION
 
-tellraw @p {"text":"<Pixelmon Master> Estamos cargándolo todo, un momento..."}
+tellraw @p {"text":"<Gardenia Master> Estamos cargándolo todo, un momento..."}
 
 # Gym leaders dialogues 
 scoreboard objectives add entradaPetra dummy
@@ -42,8 +42,8 @@ scoreboard players add @p timerPostPlubio 1
 
 # Gashapones
 scoreboard objectives add random_reward dummy
+scoreboard objectives add userDay dummy
+scoreboard objectives add serverDay dummy
 
-## TODO add random rewards
-scoreboard players add @p random_reward 1
-
-tellraw @p {"text":"<Pixelmon Master> Todo cargado. Disfruta de la experiencia."}
+# All set
+tellraw @p {"text":"<Gardenia Master> Todo cargado. Disfruta de la experiencia."}
