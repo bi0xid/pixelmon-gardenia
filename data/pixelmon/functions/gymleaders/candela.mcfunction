@@ -13,7 +13,7 @@ execute as @p[tag=preCandela,scores={timerPreCandela=280}] run tellraw @p {"text
 execute as @p[tag=preCandela,scores={timerPreCandela=320}] run tellraw @p {"text":"<Candela> ¡Haiyaaaaaaaaaaaaa!"}
 
 execute as @p[tag=preCandela,scores={timerPreCandela=20000}] run tag @p remove preCandela
-scoreboard players add @p timerIntroPetra 1
+scoreboard players add @p timerPreCandela 1
 
 ## Candela POST-batalla
 
