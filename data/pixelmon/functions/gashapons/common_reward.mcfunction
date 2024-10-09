@@ -8,9 +8,6 @@ tellraw @p ["",{"text":"¡Has usado un Gashapon!","color":"green"}]
 # remove 1 gashapon
 clear @p gashapixel:gashapon 1
 
-# remove the tags
-execute as @p[tag=commongashaInHand] run tag @p remove commongashaInHand
-
 ## know the reward (debug)
 scoreboard players get @p random_reward
 

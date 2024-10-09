@@ -7,7 +7,7 @@ execute if score @p userDay > @p serverDay run tag @p add gashaDiario
 # Do it only once - make userDay receive serverDay
 scoreboard players operation @p userDay = @p serverDay
 
-# If you sould get a gasha, get it!
+# If you should get a gasha, get it!
 execute as @p[tag=gashaDiario] run tellraw @p ["",{"text":"¡Acabas de recibir tu llave de gasha diaria!","color":"gold"}]
 execute as @p[tag=gashaDiario] run give @p gashapixel:gashapon
 execute as @p[tag=gashaDiario] run playsound minecraft:tmget ambient @p ~ ~ ~ 1 1 1
@@ -40,3 +40,6 @@ execute as @p[tag=gashaMessage,scores={gashaMessageTimer=600}] run tag @p remove
 # If you are close to the Gashapon Machine, get your reward!
 execute as @p[tag=commongashaInHand,x=-183,y=76,z=161,distance=..1] at @p run function pixelmon:gashapons/common_reward
 execute as @p[tag=raregashaInHand,x=-183,y=76,z=161,distance=..1] at @p run function pixelmon:gashapons/special_reward
+
+execute as @p[tag=commongashaInHand] run tag @p remove commongashaInHand
+execute as @p[tag=raregashaInHand] run tag @p remove raregashaInHand
