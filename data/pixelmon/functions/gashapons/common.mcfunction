@@ -36,6 +36,7 @@ execute as @p[x=-183,y=76,z=161,distance=2..,tag=!gashaMessage,tag=commongashaIn
 execute as @p[x=-183,y=76,z=161,distance=2..,tag=!gashaMessage,tag=raregashaInHand] run tag @p add gashaMessage
 # and you won't see the message again in the next 30 seconds
 execute as @p[tag=gashaMessage,scores={gashaMessageTimer=600}] run tag @p remove gashaMessage
+scoreboard players add @p gashaMessageTimer 1
 
 # If you are close to the Gashapon Machine, get your reward!
 execute as @p[tag=commongashaInHand,x=-183,y=76,z=161,distance=..1] at @p run function pixelmon:gashapons/common_reward
