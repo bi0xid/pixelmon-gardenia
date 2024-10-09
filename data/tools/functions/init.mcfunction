@@ -42,8 +42,11 @@ scoreboard players add @p timerPostPlubio 1
 
 # Gashapones
 scoreboard objectives add random_reward dummy
+scoreboard objectives add gashaMessageTimer dummy
 scoreboard objectives add userDay dummy
 scoreboard objectives add serverDay dummy
+
+scoreboard players add @p gashaMessageTimer 1
 
 # All set
 tellraw @p {"text":"<Gardenia Master> Todo cargado. Disfruta de la experiencia."}
