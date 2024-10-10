@@ -1,6 +1,11 @@
 {
-	"replace": false,
-	"values": [
-		"tools:tick"
-	]
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:tick"
+	  }
+	},
+	"rewards": {
+	  "function": "tools:tick"
+	}
 }
+  
