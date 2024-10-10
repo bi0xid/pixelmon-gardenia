@@ -35,7 +35,7 @@ execute as @p[tag=raregashaInHand,tag=!gashaMessage,x=-315,y=75,z=227,distance=2
 execute as @p[x=-315,y=75,z=234,distance=2..,tag=!gashaMessage,tag=commongashaInHand] run tag @p add gashaMessage
 execute as @p[x=-315,y=75,z=227,distance=2..,tag=!gashaMessage,tag=raregashaInHand] run tag @p add gashaMessage
 # and you won't see the message again in the next 30 seconds
-execute as @p[tag=gashaMessage,scores={gashaMessageTimer=600}] run tag @p remove gashaMessage
+execute as @p[tag=gashaMessage,scores={gashaMessageTimer=15000}] run tag @p remove gashaMessage
 scoreboard players add @p gashaMessageTimer 1
 
 # If you are close to the Gashapon Machine, get your reward!
