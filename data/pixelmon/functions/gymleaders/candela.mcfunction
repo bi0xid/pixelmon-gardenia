@@ -1,48 +1,48 @@
 ## Candela PRE-batalla
-execute as @p[tag=!preCandela] run scoreboard players reset @p timerPreCandela
-execute as @p[x=19993,y=23,z=20104,distance=..8,tag=!preCandela] run tag @p add preCandela
+execute as @s[tag=!preCandela] run scoreboard players reset @s timerPreCandela
+execute as @s[x=19993,y=23,z=20104,distance=..8,tag=!preCandela] run tag @s add preCandela
 
-execute as @p[tag=preCandela,scores={timerPreCandela=1}] run tellraw @p {"text":"<Candela> ¡Bienvenido!"}
-execute as @p[tag=preCandela,scores={timerPreCandela=40}] run tellraw @p {"text":"<Candela> No, espera."}
-execute as @p[tag=preCandela,scores={timerPreCandela=80}] run tellraw @p {"text":"<Candela> Quiero decir... ¡Entrenador debilucho, lo has hecho bien al llegar hasta aquí!"}
-execute as @p[tag=preCandela,scores={timerPreCandela=120}] run tellraw @p {"text":"<Candela> Veamos. Estoy, uh, honrada de servir como la Líder de Gimnasio de..."}
-execute as @p[tag=preCandela,scores={timerPreCandela=160}] run tellraw @p {"text":"<Candela> No, quiero decir..."}
-execute as @p[tag=preCandela,scores={timerPreCandela=200}] run tellraw @p {"text":"<Candela> ¡Soy Candela, y estoy a cargo aquí!"}
-execute as @p[tag=preCandela,scores={timerPreCandela=240}] run tellraw @p {"text":"<Candela> Uh... ¡Será mejor que no me subestimes solo porque llevo poco tiempo siendo Líder!"}
-execute as @p[tag=preCandela,scores={timerPreCandela=280}] run tellraw @p {"text":"<Candela> Con las habilidades heredadas de mi abuelo, voy a, uh, demostrar los movimientos ardientes que hemos perfeccionado en esta tierra!"}
-execute as @p[tag=preCandela,scores={timerPreCandela=320}] run tellraw @p {"text":"<Candela> ¡Haiyaaaaaaaaaaaaa!"}
+execute as @s[tag=preCandela,scores={timerPreCandela=1}] run tellraw @s {"text":"<Candela> ¡Bienvenido!"}
+execute as @s[tag=preCandela,scores={timerPreCandela=40}] run tellraw @s {"text":"<Candela> No, espera."}
+execute as @s[tag=preCandela,scores={timerPreCandela=80}] run tellraw @s {"text":"<Candela> Quiero decir... ¡Entrenador debilucho, lo has hecho bien al llegar hasta aquí!"}
+execute as @s[tag=preCandela,scores={timerPreCandela=120}] run tellraw @s {"text":"<Candela> Veamos. Estoy, uh, honrada de servir como la Líder de Gimnasio de..."}
+execute as @s[tag=preCandela,scores={timerPreCandela=160}] run tellraw @s {"text":"<Candela> No, quiero decir..."}
+execute as @s[tag=preCandela,scores={timerPreCandela=200}] run tellraw @s {"text":"<Candela> ¡Soy Candela, y estoy a cargo aquí!"}
+execute as @s[tag=preCandela,scores={timerPreCandela=240}] run tellraw @s {"text":"<Candela> Uh... ¡Será mejor que no me subestimes solo porque llevo poco tiempo siendo Líder!"}
+execute as @s[tag=preCandela,scores={timerPreCandela=280}] run tellraw @s {"text":"<Candela> Con las habilidades heredadas de mi abuelo, voy a, uh, demostrar los movimientos ardientes que hemos perfeccionado en esta tierra!"}
+execute as @s[tag=preCandela,scores={timerPreCandela=320}] run tellraw @s {"text":"<Candela> ¡Haiyaaaaaaaaaaaaa!"}
 
-execute as @p[tag=preCandela,scores={timerPreCandela=20000}] run tag @p remove preCandela
-scoreboard players add @p timerPreCandela 1
+execute as @s[tag=preCandela,scores={timerPreCandela=20000}] run tag @s remove preCandela
+scoreboard players add @s timerPreCandela 1
 
 ## Candela POST-batalla
 
-execute as @p[tag=!postCandela] run scoreboard players reset @p timerpostCandela
-execute if entity @p[x=19993,y=23,z=20104,distance=..12,tag=!postCandela,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @p add postCandela
-execute as @p[tag=postCandela,scores={timerpostCandela=1}] run clear @p pixelmon:ultra_forest_key
+execute as @s[tag=!postCandela] run scoreboard players reset @s timerpostCandela
+execute if entity @s[x=19993,y=23,z=20104,distance=..12,tag=!postCandela,nbt={Inventory:[{id:"pixelmon:ultra_forest_key"}]}] run tag @s add postCandela
+execute as @s[tag=postCandela,scores={timerpostCandela=1}] run clear @s pixelmon:ultra_forest_key
 
-execute as @p[tag=postCandela,scores={timerpostCandela=1}] run tellraw @p {"text":"<Candela> Yo... solo he comenzado recientemente como Líder de Gimnasio."}
-execute as @p[tag=postCandela,scores={timerpostCandela=40}] run tellraw @p {"text":"<Candela> Supongo que estaba intentando demasiado ser alguien que no soy."}
-execute as @p[tag=postCandela,scores={timerpostCandela=80}] run tellraw @p {"text":"<Candela> Cuando no actúo como yo misma, no es de extrañar que los Pokémon que luchan a mi lado se confundan."}
-execute as @p[tag=postCandela,scores={timerpostCandela=120}] run tellraw @p {"text":"<Candela> Gracias por enseñarme eso. Te lo mereces."}
+execute as @s[tag=postCandela,scores={timerpostCandela=1}] run tellraw @s {"text":"<Candela> Yo... solo he comenzado recientemente como Líder de Gimnasio."}
+execute as @s[tag=postCandela,scores={timerpostCandela=40}] run tellraw @s {"text":"<Candela> Supongo que estaba intentando demasiado ser alguien que no soy."}
+execute as @s[tag=postCandela,scores={timerpostCandela=80}] run tellraw @s {"text":"<Candela> Cuando no actúo como yo misma, no es de extrañar que los Pokémon que luchan a mi lado se confundan."}
+execute as @s[tag=postCandela,scores={timerpostCandela=120}] run tellraw @s {"text":"<Candela> Gracias por enseñarme eso. Te lo mereces."}
 
-execute as @p[tag=postCandela,scores={timerpostCandela=180}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Calor de Candela.","italic":true,"color":"gray"}]
-execute as @p[tag=postCandela,scores={timerpostCandela=180}] run give @p pixelmon:heat_badge
-execute as @p[tag=postCandela,scores={timerpostCandela=180}] run stopsound @p record
-execute as @p[tag=postCandela,scores={timerpostCandela=180}] run playsound minecraft:badgeget ambient @p ~ ~ ~ 1 1 1
-execute as @p[tag=postCandela,scores={timerpostCandela=180}] run advancement grant @p only pixelmon:badges/04medallacalor
+execute as @s[tag=postCandela,scores={timerpostCandela=180}] run tellraw @s ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" recibió la Medalla Calor de Candela.","italic":true,"color":"gray"}]
+execute as @s[tag=postCandela,scores={timerpostCandela=180}] run give @s pixelmon:heat_badge
+execute as @s[tag=postCandela,scores={timerpostCandela=180}] run stopsound @s record
+execute as @s[tag=postCandela,scores={timerpostCandela=180}] run playsound minecraft:badgeget ambient @s ~ ~ ~ 1 1 1
+execute as @s[tag=postCandela,scores={timerpostCandela=180}] run advancement grant @s only pixelmon:badges/04medallacalor
 
-execute as @p[tag=postCandela,scores={timerpostCandela=240}] run tellraw @p {"text":"<Candela> Si tienes la Insignia Calor, permite que los Pokémon usen el movimiento HM Fuerza fuera de batalla."}
-execute as @p[tag=postCandela,scores={timerpostCandela=280}] run tellraw @p {"text":"<Candela> Esto es un símbolo de mi agradecimiento. ¡No seas tímido al tomarlo!"}
+execute as @s[tag=postCandela,scores={timerpostCandela=240}] run tellraw @s {"text":"<Candela> Si tienes la Insignia Calor, permite que los Pokémon usen el movimiento HM Fuerza fuera de batalla."}
+execute as @s[tag=postCandela,scores={timerpostCandela=280}] run tellraw @s {"text":"<Candela> Esto es un símbolo de mi agradecimiento. ¡No seas tímido al tomarlo!"}
 
-execute as @p[tag=postCandela,scores={timerpostCandela=280}] run tellraw @p ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo la MT50 Calor Abrasador!","italic":true,"color":"gray"}]
-execute as @p[tag=postCandela,scores={timerpostCandela=280}] run give @p pixelmon:tm_gen6{tm:50s}
-execute as @p[tag=postCandela,scores={timerpostCandela=280}] run playsound minecraft:tmget ambient @p ~ ~ ~ 1 1 1
+execute as @s[tag=postCandela,scores={timerpostCandela=280}] run tellraw @s ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" obtuvo la MT50 Calor Abrasador!","italic":true,"color":"gray"}]
+execute as @s[tag=postCandela,scores={timerpostCandela=280}] run give @s pixelmon:tm_gen6{tm:50s}
+execute as @s[tag=postCandela,scores={timerpostCandela=280}] run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1
 
-execute as @p[tag=postCandela,scores={timerpostCandela=320}] run tellraw @p {"text":"<Candela> Calor Abrasador es un movimiento de tipo Fuego que inflige un daño serio al objetivo."}
-execute as @p[tag=postCandela,scores={timerpostCandela=360}] run tellraw @p {"text":"<Candela> Pero también reduce drásticamente el Ataque Especial del Pokémon que lo usa."}
-execute as @p[tag=postCandela,scores={timerpostCandela=400}] run tellraw @p {"text":"<Candela> Puede que no sea adecuado para batallas largas."}
+execute as @s[tag=postCandela,scores={timerpostCandela=320}] run tellraw @s {"text":"<Candela> Calor Abrasador es un movimiento de tipo Fuego que inflige un daño serio al objetivo."}
+execute as @s[tag=postCandela,scores={timerpostCandela=360}] run tellraw @s {"text":"<Candela> Pero también reduce drásticamente el Ataque Especial del Pokémon que lo usa."}
+execute as @s[tag=postCandela,scores={timerpostCandela=400}] run tellraw @s {"text":"<Candela> Puede que no sea adecuado para batallas largas."}
 
-execute as @p[tag=postCandela,scores={timerpostCandela=20000}] run tag @p remove postCandela
-scoreboard players add @p timerpostCandela 1
+execute as @s[tag=postCandela,scores={timerpostCandela=20000}] run tag @s remove postCandela
+scoreboard players add @s timerpostCandela 1
 
