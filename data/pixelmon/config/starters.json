@@ -244,7 +244,7 @@
       },
       {
         "spec": "shiny",
-        "rate": 0.5
+        "rate": 2
       }
     ],
     "options": [
