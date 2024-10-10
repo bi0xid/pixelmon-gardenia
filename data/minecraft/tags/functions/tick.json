@@ -1,11 +1,15 @@
 {
-	"criteria": {
-	  "requirement": {
-		"trigger": "minecraft:tick"
-	  }
-	},
-	"rewards": {
-	  "function": "tools:tick"
-	}
+	"replace": false,
+	"values": [
+		"tools:tick",
+		"pixelmon:gashapons/common",
+		"pixelmon:gymleaders/petra",
+		"pixelmon:gymleaders/candela",
+		"pixelmon:gymleaders/marcial",
+		"pixelmon:gymleaders/alana",
+		"pixelmon:gymleaders/norman",
+		"pixelmon:gymleaders/vitoyleti",
+		"pixelmon:gymleaders/erico",
+		"pixelmon:gymleaders/plubio"
+	]
 }
-  

@@ -1,4 +1,4 @@
-## LOAD INFORMATION
+# LOAD INFORMATION
 
 tellraw @s {"text":"<Gardenia Master> Estamos cargándolo todo, un momento..."}
 

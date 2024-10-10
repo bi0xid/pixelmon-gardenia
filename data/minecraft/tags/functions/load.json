@@ -1,11 +1,6 @@
 {
-	"criteria": {
-	  "requirement": {
-		"trigger": "minecraft:loaded"
-	  }
-	},
-	"rewards": {
-	  "function": "tools:init"
-	}
+	"replace": false,
+	"values": [
+		"tools:init"
+	]
 }
-  
