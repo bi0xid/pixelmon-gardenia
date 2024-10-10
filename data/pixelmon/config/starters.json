@@ -223,6 +223,14 @@
         "x": 17,
         "y": 2,
         "scale": 1
+      },
+      {
+        "spec": "Eevee",
+        "chanceSpecs": [],
+        "page": 0,
+        "x": 17,
+        "y": 4,
+        "scale": 1
       }
     ],
     "chanceSpecs": [
